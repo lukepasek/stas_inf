@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ESP IOT DASHBOARD</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <h1 id="hostname-val">HOSTNAME</h1>
+        </div>
+        <div id="connection-status" class="status-icon">&#9888;</div>
+        <div class="content">
+            <p class="card-title"><span id="uptime-val">Uptime --</span> </p>
+            <!-- <p class="reading"><span id="uptime"></span> </p>
+            <p class="reading"><span id="uptime"></span> </p> -->
+            <div class="card-grid" id="value-container-0" style="visibility: collapse;">
+                <div class="card">
+                    <p class="card-title">Voltage</p>
+                    <p class="reading">
+                        <span id="voltage-val-0">0.000</span>&nbsp;<span class="unit">V</span>
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="card-title">Current</p>
+                    <p class="reading">
+                        <span id="current-val-0">0.000</span>&nbsp;<span class="unit">A</span>
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="card-title">Power</p>
+                    <p class="reading">
+                        <span id="power-val-0">0.000</span>&nbsp;<span class="unit">W</span>
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="card-title">Current in/out</p>
+                    <p class="reading-small">
+                        <span id="current-in-val-0">0.00</span>&nbsp;<span class="unit">Ah</span>
+                    </p>
+                    <p class="reading-small">
+                        <span id="current-out-val-0">0.00</span>&nbsp;<span class="unit">Ah</span>
+                    </p>                    
+                </div>
+            </div>
+            <p class="card-title">History <span id="history_size"></span></p>
+            <div class="card-grid">
+                <div class="history" id="history"></div>
+            </div>            
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
