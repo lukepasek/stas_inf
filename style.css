@@ -1,0 +1,101 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    text-align: center;
+}
+body {
+    margin: 0;
+    background-color: black;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #0A1128;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(33, 139, 0);
+}
+.status-icon {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: red;
+    margin: 10px;
+    position: absolute;    
+    top: 0;
+    left: 0;
+}
+.content {
+    padding: 10px;
+}
+.card-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+.card {
+    background-color: #161616;
+    /* box-shadow: 2px 2px 12px 1px rgba(80,80,80,0.7); */
+    border-radius: 0px;    
+}
+.section-title {
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    color: #034078    
+}
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(34, 146, 0);
+}
+.reading {
+    font-size: 2.0rem;
+    font-weight: bold;
+    color: rgb(46, 196, 0);
+    margin: 10px;
+}
+.reading-small {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: rgb(46, 196, 0);
+    margin: 2px;
+    vertical-align: top;
+}
+.unit {
+    font-size: 1.0rem;
+    font-weight: normal;
+    color: rgb(34, 146, 0);
+}
+.history {
+    background-color: #161616;
+    display: flex; 
+    /* background-color:rgb(193, 226, 248);  */
+    height: 400px;
+    /* width: 80%; */
+    border-width: 0;
+    border-width: 1px;
+    border-color: rgb(97, 97, 97);
+    border-style: none none solid none;
+}
+.history_canvas {
+    height:100%;
+    width:100%;
+    image-rendering: pixelated;
+}
+.bar0 {
+    display: inline-block;
+    background-color:#e0f6ff;
+    height:100%;
+    width:1px;
+    align-self: flex-end;
+}
+.bar {
+    display: inline-block;
+    background-color:#cc0000;
+    height:10%;
+    width:1.666%;
+    align-self: flex-end;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 2px;
+}
